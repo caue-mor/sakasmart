@@ -14,8 +14,8 @@
         --bg-soft: #222222;
         --text: #ffffff;
         --muted: #cfcfcf;
-        --cyan: #55dff3;
-        --cyan-strong: #27c6dd;
+        --accent: #25d366;
+        --accent-strong: #18b957;
         --line: rgba(255, 255, 255, 0.12);
       }
 
@@ -37,7 +37,7 @@
         place-items: center;
         padding: 32px 18px;
         background:
-          radial-gradient(circle at 50% 0%, rgba(85, 223, 243, 0.18), transparent 34%),
+          radial-gradient(circle at 50% 0%, rgba(37, 211, 102, 0.18), transparent 34%),
           linear-gradient(180deg, #1f1f1f 0%, #141414 100%);
       }
 
@@ -52,13 +52,13 @@
       .logo {
         width: min(300px, 72vw);
         height: auto;
-        margin-bottom: 34px;
+        margin-bottom: 22px;
         filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.42));
       }
 
       .tag {
         margin: 0 0 16px;
-        color: var(--cyan);
+        color: var(--accent);
         font-size: 15px;
         font-weight: 900;
         letter-spacing: 0;
@@ -74,7 +74,7 @@
       }
 
       .highlight {
-        color: var(--cyan);
+        color: var(--accent);
       }
 
       .subtitle {
@@ -90,16 +90,16 @@
         align-items: center;
         justify-content: center;
         min-height: 62px;
-        margin-top: 38px;
+        margin: 0 0 34px;
         padding: 0 30px;
-        border: 2px solid var(--cyan);
+        border: 2px solid var(--accent);
         border-radius: 10px;
-        background: var(--cyan);
+        background: var(--accent);
         color: #111111;
         font-size: 19px;
         font-weight: 900;
         text-decoration: none;
-        box-shadow: 0 18px 46px rgba(85, 223, 243, 0.24);
+        box-shadow: 0 18px 46px rgba(37, 211, 102, 0.24);
         transition:
           transform 180ms ease,
           background 180ms ease,
@@ -109,7 +109,7 @@
       .button:hover {
         transform: translateY(-2px);
         background: #ffffff;
-        box-shadow: 0 22px 54px rgba(85, 223, 243, 0.32);
+        box-shadow: 0 22px 54px rgba(37, 211, 102, 0.32);
       }
 
       .benefits {
@@ -135,7 +135,7 @@
       .benefit span {
         display: block;
         margin-bottom: 8px;
-        color: var(--cyan);
+        color: var(--accent);
         font-size: 22px;
       }
 
@@ -179,6 +179,15 @@
           height="625"
         />
 
+        <a
+          class="button"
+          href="https://chat.whatsapp.com/FUQ3o4z75HsGH0OxVhafsO"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Entrar no grupo de promoções
+        </a>
+
         <p class="tag">Grupo oficial de promoções</p>
         <h1>
           Receba as melhores ofertas da
@@ -188,15 +197,6 @@
           Entre no grupo e acompanhe promoções, novidades e oportunidades para comprar
           produtos smart com mais economia.
         </p>
-
-        <a
-          class="button"
-          href="https://chat.whatsapp.com/FUQ3o4z75HsGH0OxVhafsO"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Entrar no grupo de promoções
-        </a>
 
         <div class="benefits" aria-label="Benefícios do grupo">
           <div class="benefit">
