@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saka Smart | Promoções no WhatsApp</title>
+    <meta
+      name="description"
+      content="Entre no grupo de WhatsApp da Saka Smart e receba promoções exclusivas."
+    />
+    <style>
+      :root {
+        --bg: #191919;
+        --bg-soft: #222222;
+        --text: #ffffff;
+        --muted: #cfcfcf;
+        --cyan: #55dff3;
+        --cyan-strong: #27c6dd;
+        --line: rgba(255, 255, 255, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      .page {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 18px;
+        background:
+          radial-gradient(circle at 50% 0%, rgba(85, 223, 243, 0.18), transparent 34%),
+          linear-gradient(180deg, #1f1f1f 0%, #141414 100%);
+      }
+
+      .hero {
+        width: min(980px, 100%);
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .logo {
+        width: min(220px, 58vw);
+        height: auto;
+        margin-bottom: 34px;
+        filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.42));
+      }
+
+      .tag {
+        margin: 0 0 16px;
+        color: var(--cyan);
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 850px;
+        margin: 0;
+        font-size: clamp(42px, 7vw, 78px);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .highlight {
+        color: var(--cyan);
+      }
+
+      .subtitle {
+        max-width: 660px;
+        margin: 24px auto 0;
+        color: var(--muted);
+        font-size: clamp(18px, 2.6vw, 23px);
+        line-height: 1.5;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 62px;
+        margin-top: 38px;
+        padding: 0 30px;
+        border: 2px solid var(--cyan);
+        border-radius: 10px;
+        background: var(--cyan);
+        color: #111111;
+        font-size: 19px;
+        font-weight: 900;
+        text-decoration: none;
+        box-shadow: 0 18px 46px rgba(85, 223, 243, 0.24);
+        transition:
+          transform 180ms ease,
+          background 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+        background: #ffffff;
+        box-shadow: 0 22px 54px rgba(85, 223, 243, 0.32);
+      }
+
+      .benefits {
+        width: min(780px, 100%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 44px;
+      }
+
+      .benefit {
+        min-height: 96px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.04);
+        color: #ededed;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      .benefit span {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--cyan);
+        font-size: 22px;
+      }
+
+      .note {
+        margin: 22px 0 0;
+        color: #9d9d9d;
+        font-size: 14px;
+      }
+
+      @media (max-width: 720px) {
+        .page {
+          align-items: start;
+          padding-top: 44px;
+        }
+
+        .logo {
+          margin-bottom: 28px;
+        }
+
+        .button {
+          width: 100%;
+          padding: 0 18px;
+          font-size: 17px;
+        }
+
+        .benefits {
+          grid-template-columns: 1fr;
+          margin-top: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-label="Landing page da Saka Smart">
+        <img
+          class="logo"
+          src="assets/saka-smart-logo.png"
+          alt="Saka Smart"
+          width="204"
+          height="206"
+        />
+
+        <p class="tag">Grupo oficial de promoções</p>
+        <h1>
+          Receba as melhores ofertas da
+          <span class="highlight">Saka Smart</span> no WhatsApp.
+        </h1>
+        <p class="subtitle">
+          Entre no grupo e acompanhe promoções, novidades e oportunidades para comprar
+          produtos smart com mais economia.
+        </p>
+
+        <a
+          class="button"
+          href="https://chat.whatsapp.com/SEU-LINK-AQUI"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Entrar no grupo de promoções
+        </a>
+
+        <div class="benefits" aria-label="Benefícios do grupo">
+          <div class="benefit">
+            <span>01</span>
+            Alertas rápidos de ofertas
+          </div>
+          <div class="benefit">
+            <span>02</span>
+            Promoções selecionadas
+          </div>
+          <div class="benefit">
+            <span>03</span>
+            Acesso gratuito pelo WhatsApp
+          </div>
+        </div>
+
+        <p class="note">Substitua o link do botão pelo convite oficial do grupo.</p>
+      </section>
+    </main>
+  </body>
+</html>
