@@ -107,7 +107,7 @@
         align-items: center;
         justify-content: center;
         min-height: 62px;
-        margin: 0 0 34px;
+        margin: 30px 0 0;
         padding: 0 30px;
         border: 2px solid var(--accent);
         border-radius: 10px;
@@ -156,10 +156,38 @@
         font-size: 22px;
       }
 
-      .note {
-        margin: 22px 0 0;
-        color: #9d9d9d;
-        font-size: 14px;
+      .benefit strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #ffffff;
+        font-size: 17px;
+      }
+
+      .proof,
+      .urgency {
+        width: min(760px, 100%);
+        margin-top: 22px;
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.04);
+        color: #ededed;
+        font-size: 17px;
+        font-weight: 800;
+        line-height: 1.45;
+      }
+
+      .proof {
+        margin-top: 28px;
+      }
+
+      .urgency {
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .urgency strong {
+        color: #ffffff;
       }
 
       @media (max-width: 720px) {
@@ -176,6 +204,7 @@
           width: 100%;
           padding: 0 18px;
           font-size: 17px;
+          text-align: center;
         }
 
         .benefits {
@@ -196,6 +225,44 @@
           height="625"
         />
 
+        <p class="tag">🟢 Grupo oficial de promoções — vagas limitadas</p>
+        <h1>
+          Economize todo mês em automação e smartphones —
+          <span class="highlight">antes de todo mundo</span>
+        </h1>
+        <p class="subtitle">
+          Mais de 500 pessoas já recebem ofertas exclusivas da Saka Smart direto no
+          WhatsApp antes de chegar nas lojas.
+        </p>
+
+        <div class="benefits" aria-label="Benefícios do grupo">
+          <div class="benefit">
+            <span>⚡</span>
+            <strong>Alertas antes de todo mundo</strong>
+            Seja o primeiro a saber quando uma oferta exclusiva entrar — antes de esgotar.
+          </div>
+          <div class="benefit">
+            <span>💰</span>
+            <strong>Promoções que valem a pena</strong>
+            Apenas ofertas selecionadas com desconto real em automação e smartphones.
+          </div>
+          <div class="benefit">
+            <span>📲</span>
+            <strong>Acesso 100% gratuito</strong>
+            Entre uma vez e receba tudo direto no seu WhatsApp sem custo nenhum.
+          </div>
+        </div>
+
+        <p class="proof">
+          🟢 Última promoção enviada no grupo: 15% de desconto em smartphone — esgotou
+          em menos de 24 horas.
+        </p>
+
+        <p class="urgency">
+          <strong>⚠️ O grupo tem vagas limitadas para garantir a qualidade das ofertas.</strong>
+          Quando lotar, fecha — e a próxima turma não tem data prevista.
+        </p>
+
         <a
           class="button"
           href="https://chat.whatsapp.com/FUQ3o4z75HsGH0OxVhafsO"
@@ -203,35 +270,8 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          Entrar no grupo de promoções
+          ✅ Quero entrar no grupo agora — é gratuito
         </a>
-
-        <p class="tag">Grupo oficial de promoções</p>
-        <h1>
-          Receba as melhores ofertas da
-          <span class="highlight">Saka Smart</span> no WhatsApp.
-        </h1>
-        <p class="subtitle">
-          Entre no grupo e acompanhe promoções, novidades e oportunidades para comprar
-          produtos smart com mais economia.
-        </p>
-
-        <div class="benefits" aria-label="Benefícios do grupo">
-          <div class="benefit">
-            <span>01</span>
-            Alertas rápidos de ofertas
-          </div>
-          <div class="benefit">
-            <span>02</span>
-            Promoções selecionadas
-          </div>
-          <div class="benefit">
-            <span>03</span>
-            Acesso gratuito pelo WhatsApp
-          </div>
-        </div>
-
-        <p class="note">Substitua o link do botão pelo convite oficial do grupo.</p>
       </section>
     </main>
   </body>
